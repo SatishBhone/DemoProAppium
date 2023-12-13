@@ -11,13 +11,13 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-public class BaseTest {
+public class CEBaseTest {
 
 	public AndroidDriver  driver;
 	public AppiumDriverLocalService services;
 	
 	@BeforeClass()
-	public void ConfigureAppium() 
+	public void CEConfigureAppium() 
 	{
 
 		//Code to Start the Server
@@ -35,9 +35,10 @@ public class BaseTest {
 		options.setAutomationName("UiAutomator2");
 		options.setDeviceName("emulator-5554");
 		//options.setAppPackage("com.android.settings");
-		//options.setAppActivity("com.android.settings.applications.InstalledAppDetails");
-		options.setAppPackage("io.appium.android.apis");
-		options.setAppActivity(".ApiDemos");
+		options.setAppPackage("com.cleanelectric.ceassist");
+		options.setAppActivity("com.cleanelectric.ceassist.MainActivity");
+		//options.setAppPackage("io.appium.android.apis");
+		//options.setAppActivity(".ApiDemos");
 	 
 	  driver = new AndroidDriver(options);
 	  

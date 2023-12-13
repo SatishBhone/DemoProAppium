@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-07T19:09:53 IST" name="Default suite" finished-at="2023-12-07T19:10:17 IST" duration-ms="23389">
+  <suite started-at="2023-12-13T19:07:10 IST" name="Default suite" finished-at="2023-12-13T19:07:36 IST" duration-ms="26556">
     <groups>
     </groups>
-    <test started-at="2023-12-07T19:09:53 IST" name="Default test" finished-at="2023-12-07T19:10:17 IST" duration-ms="23389">
-      <class name="CleanEletric.DemoPro.LongPress">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:CleanEletric.DemoPro.LongPress@565f390]" started-at="2023-12-07T19:09:53 IST" name="ConfigureAppium" finished-at="2023-12-07T19:10:05 IST" duration-ms="11458" status="PASS">
+    <test started-at="2023-12-13T19:07:10 IST" name="Default test" finished-at="2023-12-13T19:07:36 IST" duration-ms="26556">
+      <class name="CleanEletric.DemoPro.CEAppiumBasic">
+        <test-method is-config="true" signature="CEConfigureAppium()[pri:0, instance:CleanEletric.DemoPro.CEAppiumBasic@13d73f29]" started-at="2023-12-13T19:07:10 IST" name="CEConfigureAppium" finished-at="2023-12-13T19:07:32 IST" duration-ms="22464" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ConfigureAppium -->
-        <test-method signature="longPressGesture()[pri:0, instance:CleanEletric.DemoPro.LongPress@565f390]" started-at="2023-12-07T19:10:05 IST" name="longPressGesture" finished-at="2023-12-07T19:10:15 IST" duration-ms="10389" status="PASS">
+        </test-method> <!-- CEConfigureAppium -->
+        <test-method signature="CEappiumTest()[pri:0, instance:CleanEletric.DemoPro.CEAppiumBasic@13d73f29]" started-at="2023-12-13T19:07:32 IST" name="CEappiumTest" finished-at="2023-12-13T19:07:34 IST" duration-ms="1241" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- longPressGesture -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:CleanEletric.DemoPro.LongPress@565f390]" started-at="2023-12-07T19:10:15 IST" name="tearDown" finished-at="2023-12-07T19:10:17 IST" duration-ms="1388" status="PASS">
+        </test-method> <!-- CEappiumTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CleanEletric.DemoPro.CEAppiumBasic@13d73f29]" started-at="2023-12-13T19:07:34 IST" name="tearDown" finished-at="2023-12-13T19:07:36 IST" duration-ms="2568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- CleanEletric.DemoPro.LongPress -->
+      </class> <!-- CleanEletric.DemoPro.CEAppiumBasic -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
