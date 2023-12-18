@@ -3,8 +3,13 @@ package CleanEletric.DemoPro;
 import java.io.File;
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
@@ -45,7 +50,24 @@ public class BaseTest {
 	  
 		
 	}
-	
+	   public void longPressAction(WebElement ele) 
+	   {
+		   driver.executeScript("mobile: longClickGesture", ImmutableMap.of("elementId",((RemoteWebElement)ele).getId(),"duration",2000));
+		    
+	   }
+	   public void ScrollToEndAction() 
+	   {
+		//  If we don't know where to Scroll Exactly Used this
+		    boolean canScrollMore;
+		    do
+		    { canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
+		        "left", 100, "top", 100, "width", 200, "height", 200,
+		        "direction", "down",
+		        "percent", 3.0
+		    ));
+		    } while(canScrollMore);
+	   }
+	   
 	@AfterClass()
 	public void tearDown() 
 	{

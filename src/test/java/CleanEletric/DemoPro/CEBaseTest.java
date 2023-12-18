@@ -34,11 +34,8 @@ public class CEBaseTest {
 		options.setPlatformVersion("9");
 		options.setAutomationName("UiAutomator2");
 		options.setDeviceName("emulator-5554");
-		//options.setAppPackage("com.android.settings");
 		options.setAppPackage("com.cleanelectric.ceassist");
 		options.setAppActivity("com.cleanelectric.ceassist.MainActivity");
-		//options.setAppPackage("io.appium.android.apis");
-		//options.setAppActivity(".ApiDemos");
 	 
 	  driver = new AndroidDriver(options);
 	  

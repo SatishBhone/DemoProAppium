@@ -7,8 +7,6 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class AppiumBasic extends BaseTest{
 	
