@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CleanEletric.DemoPro.CEAppiumBasic">
+      <class name="CleanEletric.DemoPro.DragDropDemo">
         <methods>
-          <include name="CEConfigureAppium"/>
           <include name="tearDown"/>
-          <include name="CEappiumTest"/>
+          <include name="ConfigureAppium"/>
+          <include name="dragDropTest"/>
         </methods>
-      </class> <!-- CleanEletric.DemoPro.CEAppiumBasic -->
+      </class> <!-- CleanEletric.DemoPro.DragDropDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
