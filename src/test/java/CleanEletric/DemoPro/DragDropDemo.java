@@ -27,9 +27,9 @@ public class DragDropDemo extends BaseTest {
 	     "endY", 733
 	 ));
 	 Thread.sleep(3000);
-	String droptextNmae = driver.findElement(By.id("io.appium.android.apis:id/drag_text")).getText();
+	String Result = driver.findElement(By.id("io.appium.android.apis:id/drag_text")).getText();
 	
-	Assert.assertEquals(droptextNmae, "Dot : io.appium.android.apis.view.DraggableDot{28b3fdf VFED..CL. ...P..I. 0,180-554,734 #7f09007b app:id/drag_dot_1}");
+	Assert.assertEquals(Result, "Dot : io.appium.android.apis.view.DraggableDot{28b3fdf VFED..CL. ...P..I. 0,180-554,734 #7f09007b app:id/drag_dot_1}");
 
 	System.out.println("DropElememt Successfully");
 	
