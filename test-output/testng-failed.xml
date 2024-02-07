@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CleanEletric.DemoPro.Misclellanous">
+      <class name="ECommerce.Ecommerce_TestCases">
         <methods>
-          <include name="tearDown"/>
-          <include name="appiumTest"/>
           <include name="ConfigureAppium"/>
+          <include name="tearDown"/>
+          <include name="Test1"/>
         </methods>
-      </class> <!-- CleanEletric.DemoPro.Misclellanous -->
+      </class> <!-- ECommerce.Ecommerce_TestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,8 +5,11 @@ import java.net.MalformedURLException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.DeviceRotation;
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.nativekey.AndroidKey;
@@ -37,6 +40,7 @@ public class Misclellanous extends BaseTest {
 		driver.setClipboardText("Satish Wifi");
 		driver.findElement(By.id("android:id/edit")).sendKeys(driver.getClipboardText());
 		driver.findElement(AppiumBy.className("android.widget.Button")).click();
+		
 		//driver.longPressKey(new KeyEvent(AndroidKey.ENTER));
 		
 		
